@@ -5,6 +5,8 @@ public class Excercice02 {
         System.out.println("Bonjour tout le monde!");
 byte age = 16;
 
+System.out.println("j'ai " +age + " ans");
+
 
 
     }

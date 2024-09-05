@@ -10,6 +10,7 @@ System.out.println(".... Traitement ....");
     variable1 = variable2;
     System.out.println("le contenu de la variable 1 est " +variable1);
     System.out.println("le contenu de la variable 2 est " +variable3);
+
     
 
 }
