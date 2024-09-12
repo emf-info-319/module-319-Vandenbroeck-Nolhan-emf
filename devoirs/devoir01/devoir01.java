@@ -1,6 +1,6 @@
 package devoirs.devoir01;
 
-public class devoir01 {
+public class Devoir01 {
     public static void main(String[] args) {
         int monAge = 10;
         boolean estMajeur;
