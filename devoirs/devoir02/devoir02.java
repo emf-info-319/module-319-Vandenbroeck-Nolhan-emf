@@ -7,9 +7,9 @@ public class devoir02 {
     public static void main(String[] args) {
         int reservoirA = 0; // capacité de départ du réservoir A
         int reservoirB = 0;// capacité de départ du réservoir B
-        int remplissage = (int) (Math.random() * (8 - 1 + 1)) + 1; // nombre aléatoire (MAX - MIN + 1) + 1
-        System.out.println("Il y a " + remplissage); // le " à remplir ne marche pas je ne sais pas pourquoi")
-        while (reservoirA + reservoirB < remplissage) { // tant que le réservoir A + le B est plus petit que le
+        int remplissage = (int) (Math.random() * (CAPACITE_RESERVOIR_A+CAPACITE_RESERVOIR_B-0 + 1)) +0 ; // nombre aléatoire (MAX - MIN + 1) + 1
+        System.out.println("Il y a "+remplissage); // le " à remplir ne marche pas je ne sais pas pourquoi")
+        while (remplissage != 0) { // tant que le réservoir A + le B est plus petit que le
                                                         // remplissage il peut continuer a faire la boucle (mais c'est
                                                         // la que cela ne marche pas)
             for (; reservoirA < CAPACITE_RESERVOIR_A; reservoirA++) { // tant que le réservoir A est plus petit ou égale
