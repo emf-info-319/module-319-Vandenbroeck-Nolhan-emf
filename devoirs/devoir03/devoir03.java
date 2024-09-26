@@ -3,25 +3,25 @@ package devoirs.devoir03;
 public class devoir03 {
 
     public static void main(String[] args) {
-    int jour = 77;
-    int mois = 1;
+    int jour = 15;
+    int mois = 2;
     int annee = 2024;
     int a = 4;
     if (annee <= 9999){
         if (jour< 31) {
-    if (mois == 1){System.out.println("Le " + jour   + mois   + annee  + jour);}}
+    if (mois == 1){System.out.println("Le " + jour + "/" + mois + "/"  + annee + "est le " + jour + "ème jours de l'An ");}}
 }
 switch (mois) {
     case 2:
     if (annee <= 9999){
         if (jour< 29) {
-System.out.println("Le " + jour   + mois   + annee  + jour+31);}}
+System.out.println("Le " + jour + "/"   + mois + "/"  + annee + "est le " + (jour+31) + " ème jours de l'An");}}
 break;
 case 3:
 if (jour< 31) {
 if (annee <= 9999){
 if (annee % a == 0){System.out.println("Le " + jour   + mois   + annee  + (jour+60));}
-else {System.out.println("Le " + jour   + mois   + annee  + (jour+59));}}}
+else {System.out.println("Le " + jour + "/"  + mois   + annee  + (jour+59));}}}
 break;
 case 4:
 if (annee <= 9999){
