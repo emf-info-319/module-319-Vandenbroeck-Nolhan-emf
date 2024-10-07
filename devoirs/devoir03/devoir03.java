@@ -7,7 +7,7 @@ public class devoir03 {
     int mois = 1;
     int annee = 2024;
     int a = 4;
-    if (annee <= 9999){
+    if (annee <= 9999)
         if (jour< 31) {
     if (mois == 1){System.out.println("Le " + jour   + mois   + annee  + jour);}}
 }
