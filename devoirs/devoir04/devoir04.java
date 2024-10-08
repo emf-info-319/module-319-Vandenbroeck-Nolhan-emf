@@ -1,6 +1,6 @@
 package devoirs.devoir04;
-
-import java.text.DateFormat;
+// vient tous seul quand je mets les formatage  de date trouvé sur internet
+import java.text.DateFormat; 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
