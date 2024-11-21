@@ -1,32 +1,46 @@
-package revisions;
-
 public class VandenBroeck {
-    public final static int NOMBRE_PTS_VICTOIRE = 3;
+    public final static int NOTE_MIN = 1;
+    public final static int NOTE_MAX = 6;
+    public final static int NBRE_NOTES = 5;
 
     public static void main(String[] args) {
-        String nomEquipe1 = "Barcelone";
-        String nomEquipe2 = "Madrid";
-        int nombrePointEquipe1 = 0;
-        int nombrePointEquipe2 = 0;
-        for (int i = 0; i < 10; i++) {
-            int scoreEquipe1 = (int) (Math.random() * (10 - 1 + 1)) + 0;
-            int scoreEquipe2 = (int) (Math.random() * (10 - 1 + 1)) + 0;
-            System.out.println(nomEquipe1 + " joue contre " + nomEquipe2 + " et le résultat est : " + scoreEquipe1
-                    + " à " + scoreEquipe2);
-            if (scoreEquipe1 > scoreEquipe2) {
-                System.out.println(nomEquipe1 + " a gagné");
-                nombrePointEquipe1 = nombrePointEquipe1 + NOMBRE_PTS_VICTOIRE;
-            } else if (scoreEquipe2 > scoreEquipe1) {
-                System.out.println(nomEquipe2 + " a gagné");
-                nombrePointEquipe2 += NOMBRE_PTS_VICTOIRE;
-            }
-            else {
-                System.out.println("Match nul");
-                nombrePointEquipe1 = nombrePointEquipe1 + 1;
-                nombrePointEquipe2 = nombrePointEquipe2 + 1;
+        int[] notesObtenues = new int[NBRE_NOTES];
+
+        double totalNote = 0;
+        for (int i = 0; i < notesObtenues.length; i++) {
+            notesObtenues[i] = (int) (Math.random() * (NOTE_MAX - NOTE_MIN + 1)) + NOTE_MIN;
+        }
+
+        for (int i = 0; i < notesObtenues.length; i++) {
+            totalNote = totalNote + notesObtenues[i];
+            System.out.print("La note obtenue est " + notesObtenues[i]);
+            switch (notesObtenues[i]) {
+                case 4:
+                    System.out.println(" : suffisant");
+                    break;
+                case 5:
+                    System.out.println(" : bien");
+                    break;
+                case 6:
+                    System.out.println(" : très bien");
+                    break;
+
+                default:
+                    System.out.println(" : insuffisant");
+
             }
         }
-        System.out.println(nomEquipe1 + " a " + nombrePointEquipe1 + " points");
-        System.out.println(nomEquipe2 + " a " + nombrePointEquipe2 + " points");
+    
+
+    double moyenne = totalNote / NBRE_NOTES;
+    
+    if(moyenne>4)
+    {
+        System.out.println("L'élève est promu !");
     }
-} 
+    else 
+    {
+        System.out.println("L'élève est non promu !");
+    }
+}
+}

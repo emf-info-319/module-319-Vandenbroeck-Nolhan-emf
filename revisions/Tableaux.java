@@ -1,4 +1,4 @@
-package revisions;
+
 
 public class Tableaux {public static void main(String[] args) {
   int [] Tab;

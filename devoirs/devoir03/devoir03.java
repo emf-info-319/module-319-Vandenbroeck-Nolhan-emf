@@ -10,8 +10,9 @@ public class devoir03 {
     if (annee <= 9999)
         if (jour< 31) {
     if (mois == 1){System.out.println("Le " + jour + "/" + mois + "/"  + annee + "est le " + jour + "ème jours de l'An ");}}
-}
-switch (mois) {
+switch(mois)
+
+    {
     case 2:
     if (annee <= 9999){
         if (jour< 29) {
@@ -84,5 +85,5 @@ break;
 
     
         
-}}}
-
+}
+}}
