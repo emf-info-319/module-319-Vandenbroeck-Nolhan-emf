@@ -19,9 +19,9 @@ public class IntroMethode {
     }
 
     public static int demandeNombre() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner user = new Scanner(System.in);
         System.out.println("Entrez un nombre : > ");
-        int nombre1 = scanner.nextInt();
+        int nombre1 = user.nextInt();
         return nombre1;
     }
 
@@ -33,4 +33,5 @@ public class IntroMethode {
     int somme = resultat + resultat2 + resultat3;
     return somme;
     }
+    
 }
